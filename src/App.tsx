@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
+import Accordion from "./components/Accordion/Accordion";
 
 function App() {
-    debugger
     return (
         <div className="App">
-            <div>
+            {/*<div>
                 <h3>What to learn</h3>
                 <div>
                     <input/>
@@ -21,21 +21,28 @@ function App() {
                     <button>Active</button>
                     <button>Completed</button>
                 </div>
-            </div>
-            <Rating/>
-            <Rating/>
+            </div>*/}
+            <Accordion/>
         </div>
     );
 }
 
 function Rating() {
+    console.log("Rating rendering")
     return (
-        <div>
-            <h3>4</h3>
-            <h3>5</h3>
-            <h3>6</h3>
-        </div>
-    );
+        <>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+            <Star/>
+        </>
+    )
+}
+
+function Star() {
+    console.log("Star rendering")
+    return <div>star</div>
 }
 
 export default App;
