@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 function App() {
+    debugger
     return (
         <div className="App">
             <div>
@@ -21,6 +22,7 @@ function App() {
                     <button>Completed</button>
                 </div>
             </div>
+            <Rating/>
             <Rating/>
         </div>
     );
