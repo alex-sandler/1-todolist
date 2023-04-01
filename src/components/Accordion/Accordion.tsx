@@ -2,7 +2,7 @@ import React from "react";
 
 function Accordion(props: any) {
     return <div>
-        <AccordionTitle title={props.value}/>
+        <AccordionTitle title={props.title}/>
         <AccordionBody/>
     </div>
 }
